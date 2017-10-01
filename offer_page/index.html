@@ -1,0 +1,247 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+	<title>Flaming Wok</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+	
+	<!-- Your styles -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+	
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+	
+	<!--Delete embedded styles, just for example.-->
+	
+	
+	<!--<script type="text/javascript">
+	function validateForm(form){
+				
+			var fNm = form.fname.value;
+			var eMl = form.email.value;
+			var apos=eMl.indexOf("@");
+			var dotpos=eMl.lastIndexOf(".");
+				
+			  if (fNm == "" || fNm == null){
+			    alert( "Please enter your name." );
+			    form.fname.focus();
+			    return false;
+			  }
+			  else if(eMl == ""  || eMl == null){
+				alert( "Please enter your email." );
+			    form.email.focus();
+			    return false;
+			  }
+			  else if(apos<1||dotpos-apos<2){
+			    alert( "Not a valid email." );
+			    form.email.focus();
+			    return false;
+			  }
+			  else{
+			  	return true;
+			  }
+			
+			}
+	</script>-->
+	<script type="text/javascript" src="script.js"></script>
+	
+	
+	<style type="text/css">
+	
+	body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	}
+	
+	</style>
+	
+</head>
+
+
+<body>
+	
+<div class="container top">
+	<div class="row">
+		<div class="fourcol">
+			<img src="img/flaming_wok.png" height="100" width="210" alt="Flaming Wok Restaurant" />
+		</div>
+		<div class="eightcol last">
+		<br/>
+			<a href="http://www.facebook.com/"><img src="img/facebook.png" width="30" height="30" alt="Face Book"/></a>
+			<a href="https://twitter.com/"><img src="img/twitter.png" width="30" height="30" alt="Twitter" /></a>
+			<a href="http://www.youtube.com/"><img src="img/youtube.png" width="30" height="30" alt="Youtube"/></a>
+			<form id="form1" action="">
+				<input type="text" name="fname" value="Search" size="20" />
+				<input type="submit" value="Submit" size="10" />
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="threecol">
+			<div class = "menu_item"><a href="../index.html" class="link">HOME</a></div>
+		</div>
+		<div class="threecol">
+			<div class = "menu_item"><a href="../menu_page/index.html" class="link">MENU</a></div>
+		</div>
+		<div class="threecol">
+			<div class = "menu_item"><a href="../event_page/index.html" class="link">EVENTS</a></div>
+		</div>
+		<div class="threecol last">
+			<div class = "menu_item"><a href="../offer_page/index.html" class="link">SPECIAL OFFERS</a></div>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="twelvecol">
+			<img src="img/bannerbig.gif" alt = "Flaming Wok Restaurant Animation Overview" width="1110" height="305" style="border:13px solid white"/>
+		</div>
+	</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="twocol">
+			<form action= "specOfferMenu">
+				<select name="dropList">
+   					<option value="Weekday">Weekday</option>
+   					<option value="Weekend">Weekend</option>
+   					<option value="party">Party</option>
+ 				</select>
+				&nbsp;<input type= "submit" value="Go" />
+			</form>
+			<div id="add">
+			<h3>Flaming Wok</h3>
+			<h4> 24 Fairview Strand Rd<br/>&nbsp;&nbsp;Dublin 3</h4>
+			<h4> Tel:(01)&nbsp; 8178924&nbsp;</h4>
+			</div>
+			<div class="box_time">
+			<img src="img/open.png" width="80" height="80" alt="Opening"/>
+			<h3>Current Time:</h3><h4 id="demo"></h4><br/>
+			<h3>Lunch</h3>
+			<h4>Mon - Fri: 12:30 - 15:00</h4>
+			<h4>Sat: 12:00 - 15:00</h4>
+			<h4>Sun: 12:00 - 16:00</h4><br/>
+			<h3>Dinner</h3>
+			<h4>Mon - Fri: 18:00 - 22:00</h4>
+			<h4>Sat - Sun: 18:00 - 24:00</h4>
+			</div>
+			<div id="offer">
+			<h2>Christmas Day</h2>
+			<img src="img/offer1.png" width="150" height="150" alt="Special Offer"/>
+			</div>
+			<img src="img/wifi.png" width="70" height="70" alt="WiFi"/>
+		</div>
+		<div class="tencol last">
+	    <div class="contentDish">
+		<h2>There are 5 options to chose</h2>
+		<ol>
+		<li><h4>Chicken balls,chips,sauce,coke &euro;5.00 </h4></li>
+		<li><h4>Spring rolls,3in1,coke &euro;5.00</h4></li>
+        <li><h4>Chicken curry,chips,coke &euro;6.00</h4></li>
+		<li><h4>Beef black bean,fried rice,coke  &euro;7.00</h4></li>
+		<li><h4>Ribs,duck cantonese,rice,coke &euro; 8.00</h4></li>
+		</ol>
+		</div>
+		<div class ="pictureDish"><img src = "imagesCAOZKC48.jpg" alt="chicken balls" width="275" height="150"/></div>
+		<div class="contentDish">
+		<h2>There are 4 options to chose</h2>
+		<ol>
+		<li><h4>Snack box(wings,chicken balls,spring rolls,chips),sauce,coke &euro;5.00</h4></li>
+		<li><h4>Chicen 4in1,deep fried won ton,coke &euro;6.00</h4></li>
+        <li><h4>Beef black pepper,egg fried rice,prawn cracker,coke &euro;7.00</h4></li>
+		<li><h4>Chicken skewere,duck chow mein,coke &euro;8.00</h4></li>
+        </ol>
+		</div>
+		<div class ="pictureDish"><img src = "img/imagesCA4B32NE.jpg" alt="beef"/></div>
+		<div class="contentDish">
+		<h2>There are 3 options to chose</h2>
+		<ol>
+		<li><h4> 4 people:chicken corn soup,beef curry,chicken chop suey,rice,coke,pc &euro;24.00 </h4></li>
+		<li><h4> 8 people:BBQ ribs,rolls,chicken szechuan,spicy shredded beef,rice,coke,pc &euro;45.00</h4></li>
+        <li><h4> 12 people: mix platter,duck cantonese,sweet sour prawn,chicken satay,
+		         beef curry,rice,coke,pc &euro;96.00</h4></li>
+		</ol>
+		</div>
+		<div class ="pictureDish"><img src = "img/imagesCAJH82AL.jpg" alt="king prawn" /></div>
+		
+		<div id="form_table" ><!--action = "mailto:vmacarthur@ncirl.ie"-->
+		<form method = "post"  onsubmit="return validateForm(this)" action="mailto:vmacarthur@ncirl.ie">
+		
+		<table >
+		<tr>
+		<td>First name:</td>
+		<td><input name = "fname" type ="text" value = "Your name" tabindex= "1"/></td>
+		</tr>
+		<tr>
+		<td>Mobile No.:</td>
+		<td><input name = "number" type = "text" value = "Your No. here" /></td>
+		</tr>
+		<tr>
+		<td>E-mail:</td>
+		<td><input name = "email" type = "text" value = "Your E-mail"/></td>
+		</tr>
+		<tr>
+		<td>Your age:</td>
+		<td><input name = "fname" type = "text" value = "Your age"/></td>
+		</tr>
+		<tr>
+		<td>Your favourite dish:</td>
+		<td><input name = "favourite" type = "text" value = ""/></td>
+		</tr>
+		<tr>
+		<td>Where do you from?</td>
+		<td><input name = "fname" type = "text" /></td>
+		</tr>
+	 	</table>
+		<div id= "fee_back"/>
+        <fieldset>
+        <legend><b>Your fee back:</b></legend>
+        <textarea rows="5" cols = "40" name = "Fee back"></textarea><br/>
+        </fieldset>
+        <input type = "submit" value = "click"/>
+        <input type = "reset"/>
+		</form>
+        </div>
+	    </div>
+			
+		</div>
+</div>
+
+<div class="container">
+	<div class="row">
+		<div class="sevencol last">
+		<span>&copy; Flaming Wok Restaurant&nbsp;&nbsp;||&nbsp;&nbsp; Telephone: (01)&nbsp; 8178924&nbsp;||&nbsp; 24 Fairview Strand Rd - Dublin 3</span>
+		</div>
+		<div class="fivecol">
+			<div class="threecol">
+				<div class = "menu_item bot_menu"><a href="../index.html" class="link">HOME</a></div>
+			</div>
+			<div class="threecol">
+				<div class = "menu_item bot_menu"><a href="../menu_page/index.html" class="link">MENU</a></div>
+			</div>
+			<div class="threecol">
+				<div class = "menu_item bot_menu"><a href="../event_page/index.html" class="link">EVENTS</a></div>
+			</div>
+			<div class="threecol last">
+				<div class = "menu_item bot_menu"><a href="../offer_page/index.html" class="link">SPECIAL OFFERS</a></div>
+			</div>
+					
+		</div>
+
+	</div>
+
+</div>
+
+</body>
+</html>

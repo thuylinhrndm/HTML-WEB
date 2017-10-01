@@ -1,0 +1,93 @@
+.link .menu_item{
+width: 100%;
+text-decoration: none;
+background-color: #E64016;
+}
+
+.link:link{
+text-decoration: none;
+color: white;
+font-weight: bold;
+}
+
+.menu_item:visited{
+text-decoration: none;
+background-color:#B6B6B6;
+color: red
+}
+
+.menu_item:active{
+text-decoration: none;
+background-color:#B6B6B6;
+color: red
+}
+
+.menu_item:hover{
+text-decoration: none;
+background-color: red;
+color: black;
+font-weight: bold;
+}
+
+.bot_menu{
+width: 100%;
+float: left;
+text-align: right;
+font-size: 0.7em;
+height: 20px;
+-webkit-border-radius: 0 0 7px 7px;
+border-radius:  0 0 7px 7px;
+}
+.box_welcome{
+width:45%;
+height:300px;
+float:left;
+padding:10px;
+
+}
+.box_time{
+width:85%;
+float: left;
+color:#6B2400;
+border:1px solid #999;
+margin: 1em 5px;
+padding:10px; 
+background:#d8d8f4;
+border-radius:8px 10px 10px;
+
+}
+.box_news{
+width:50%;
+height:300px;
+float:left;
+padding:10px;
+}
+h1
+{
+text-align: center;
+color:#6B2400;
+
+}
+h3
+{
+padding:10px;
+color:#6B2400;
+}
+p{
+padding : 10px;
+text-align:justify;
+color:#6B2400;
+}
+#add
+{
+border: 1px solid #999;
+background-color: #d8d8f4;
+margin: 1em 5px;
+padding: 10px;
+width:80%;
+color:#6B2400;
+border-radius: 15px 15px 40px;
+-webkit-border-radius: 15px 8px 15px; 	
+	
+}
+

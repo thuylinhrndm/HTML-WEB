@@ -1,0 +1,269 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8"/>
+	<title>Flaming Wok</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+	<!-- 1140px Grid styles for IE -->
+	<!--[if lte IE 9]><link rel="stylesheet" href="css/ie.css" type="text/css" media="screen" /><![endif]-->
+
+	<!-- The 1140px Grid - http://cssgrid.net/ -->
+	<link rel="stylesheet" href="css/1140.css" type="text/css" media="screen" />
+
+	<!-- Your styles -->
+	<link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+
+	<!--css3-mediaqueries-js - http://code.google.com/p/css3-mediaqueries-js/ - Enables media queries in some unsupported browsers-->
+	<script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+
+	<!--Delete embedded styles, just for example.-->
+	<style type="text/css">
+		body {font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;}
+	</style>
+
+<script language="JavaScript" type="text/javascript">
+		msg = "Special Offer This Month. 5 euros off on your Friday Happy Meal";
+		msg = "" + msg;
+		msg = "..............................................................................." + msg;
+		msg = "................................................." + msg;
+		pos = 0;
+		function ScrollMessage() {
+		   var newtext = msg.substring(pos, msg.length) + msg.substring(0, pos);
+		   var td = document.getElementById("scroll");
+		   td.firstChild.nodeValue = newtext;
+		   pos++;
+		   if (pos > msg.length) pos = 0;
+		   window.setTimeout("ScrollMessage()",150);
+		}
+	
+	var myVar=setInterval(function(){myTimer()},1000);
+	function myTimer()
+	{
+	var d=new Date();
+	var t=d.toLocaleTimeString();
+	document.getElementById("demo").innerHTML=t;
+	}
+	</script>
+</head>
+
+<body onload="ScrollMessage()">
+
+	<div class="container top">
+		<div class="row">
+			<div class="fourcol">
+				<img src="img/flaming_wok.png" height="100" width="210" alt="Flaming Wok Restaurant" />
+			</div>
+			<div class="eightcol last">
+				<br/>
+				<a href="http://www.facebook.com/"><img src="img/facebook.png" width="30" height="30" alt="Face Book"/></a>
+				<a href="https://twitter.com/"><img src="img/twitter.png" width="30" height="30" alt="Twitter" /></a>
+				<a href="http://www.youtube.com/"><img src="img/youtube.png" width="30" height="30" alt="Youtube"/></a>
+				<form id="form1" action="">
+					<input type="text" name="fname" value="Search" size="20" />
+					<input type="submit" value="Submit" size="10" />
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="threecol">
+			<div class = "menu_item"><a href="../index.html" class="link">HOME</a></div>
+		</div>
+		<div class="threecol">
+			<div class = "menu_item"><a href="../menu_page/index.html" class="link">MENU</a></div>
+		</div>
+		<div class="threecol">
+			<div class = "menu_item"><a href="../event_page/index.html" class="link">EVENTS</a></div>
+		</div>
+		<div class="threecol last">
+			<div class = "menu_item"><a href="../offer_page/index.html" class="link">SPECIAL OFFERS</a></div>
+		</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twelvecol">
+				<img src="img/bannerbig.gif" alt = "Flaming Wok Restaurant Animation Overview" width="1110" height="305" style="border:13px solid white"/>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="twocol">
+				<div id="add">
+					<h3>Flaming Wok</h3>
+					<h4> 24
+					 	Fairview Strand Rd
+					 	<br/>
+					 	&nbsp;&nbsp;Dublin 3
+					</h4>
+					<h4> Tel:(01)&nbsp; 8178924&nbsp;</h4>
+				</div>
+				<div class="box_time">
+					<img src="img/open.png" width="80" height="80" alt="Opening"/>
+					<h3>Current Time:</h3><h4 id="demo"></h4><br/>
+					<br/>
+					<h3>Lunch</h3>
+					<h4>Mon - Fri: 12:30 - 15:00</h4>
+					<h4>Sat: 12:00 - 15:00</h4>
+					<h4>Sun: 12:00 - 16:00</h4>
+					<br/>
+					<h3>Dinner</h3>
+					<h4>Mon - Fri: 18:00 - 22:00</h4>
+					<h4>Sat - Sun: 18:00 - 24:00</h4>
+				</div><br/>
+
+				<div>
+			    	<h3>Browse our menu</h3>
+			    	<p> As far as possible all dishes are produced in the restaurant kitchen using the best of local produce.</p>
+			    	<p> Above all the philosophy behind the restaurant is that good food need not cost the earth and prices are keen without compromising quality.</p>
+			    	<p> All prices are in Euro(&#8364;), VAT and service inclusive.<br />If you have any special dietary requirements our restaurant team will be delighted to assist.</p>
+				</div>
+
+			</div>
+			<div class="tencol last">
+				<h1>Our Menus - A la Carte</h1>
+				<div id="scroll" style="font-size: 90%; font-weight: bold; color: red;">The scrolling message displays here.</div>
+				<hr />
+				<div>
+					<img src="img/dishes/BeefScallop.jpg" width="72" height="72" alt="Beef Scallop"/>
+					<img src="img/dishes/Cheese Wonton.jpg" width="72" height="72" alt="Cheese Wonton"/>
+					<img src="img/dishes/chicken brockoli.jpg" width="72" height="72" alt="Chicken Broccoli"/>
+					<img src="img/dishes/delightpork.jpg" width="72" height="72" alt="Delight Pork"/>
+					<img src="img/dishes/HotSpicy Beef.jpg" width="72" height="72" alt="Hot and Spicy Beef"/>
+					<img src="img/dishes/house fried rice.jpg" width="72" height="72" alt="House Fried Rice"/>
+					<img src="img/dishes/House lo mein.jpg" width="72" height="72" alt="House Lo Mein"/>
+					<img src="img/dishes/kungpochicken.jpg" width="72" height="72" alt="Kungpo Chicken"/>
+					<img src="img/dishes/lemon chicken.jpg" width="72" height="72" alt="Lemon Chicken"/>
+					<img src="img/dishes/pepper steak.jpg" width="72" height="72" alt="Pepper Steak"/>
+					<img src="img/dishes/Roast Pork.jpg" width="72" height="72" alt="Roast Pork"/>
+					<img src="img/dishes/RostPork mixed Veges.jpg" width="72" height="72" alt="Rosted Pork Mixed Veges"/>
+					<img src="img/dishes/Sesame chicken.jpg" width="72" height="72" alt="Sesame Chicken"/>
+					<img src="img/dishes/Shrimp garlic sauce.jpg" width="72" height="72" alt="Shrimp Garlic Sauce"/>
+					<img src="img/dishes/Shrimp Snow Pea.jpg" width="72" height="72" alt="Shrimp Snow Pea"/>
+					<img src="img/dishes/Shrimps Sceshuan.jpg" width="72" height="72" alt="Shrimps Sceshuan"/>
+					<img src="img/dishes/Singapore Mei Fun.jpg" width="72" height="72" alt="Singapore Mei Fun"/>
+					<img src="img/dishes/sweet and Sour chicken.jpg" width="72" height="72" alt="Sweet and Sour Chicken"/>
+					<img src="img/dishes/Szechuan Beef.jpg" width="72" height="72" alt="Szechuan Beef"/>
+					<img src="img/dishes/three deligh.jpg" width="72" height="72" alt="Three Deligh"/>
+					<img src="img/dishes/veg Lo Mein.jpg" width="72" height="72" alt="Veg Lo Mein"/>
+					<img src="img/dishes/Young Choe Fried Rice.jpg" width="72" height="72" alt="Young Choe Fried Rice"/>
+					<img src="img/dishes/BeefScallop.jpg" width="72" height="72" alt="Beef Scallop"/>
+					<img src="img/dishes/Cheese Wonton.jpg" width="72" height="72" alt="Cheese Wonton"/>
+		    	</div>
+
+				<hr />
+		    	<div class="box_welcome">
+					<h3><a name="01">APPETIZERS</a></h3>
+					<div>
+						<p>
+						1.&nbsp;&nbsp;Pork Egg Roll.......  &#8364;1.20<br/>
+						2.&nbsp;&nbsp;Spring Roll.......  &#8364;1.30<br/>
+						3.&nbsp;&nbsp;Beef Sticks Teriyaki.......  &#8364;4.50<br/>
+						4.&nbsp;&nbsp;Steamed or Fried Dumplings.......  &#8364;4.75<br/>
+						5.&nbsp;&nbsp;Shrimp Toast.......  &#8364;3.95
+						</p>
+					</div>
+					<br/>
+					<h3><a name="02">SOUPS</a></h3>
+					<div>
+						<p>
+						6.&nbsp;&nbsp;Egg Drop Soup.......  &#8364;1.30(Small) / &#8364;2.40(Large)<br/>
+						7.&nbsp;&nbsp;Wonton Soup.......  &#8364;1.50(Small) / &#8364;2.75(Large)<br/>
+						8.&nbsp;&nbsp;Chicken Rice or Noodle Soup.......  &#8364;1.75(Small) / &#8364;3.25(Large)<br/>
+						9.&nbsp;&nbsp;Hot and Sour Soup.......  &#8364;1.95(Small) / &#8364;3.65(Large)<br/>
+						10.&nbsp;&nbsp;Bean Curd and Vegetable Soup.......  &#8364;2.65(Small) / &#8364;3.95(Large)<br/>
+						</p>
+					</div>
+					<br/>
+					<h3><a name="03">CHOW MEIN</a></h3>
+					<div>
+						<p>
+						11.&nbsp;&nbsp;Vegetable Chow Mein.......  &#8364;4.50(Small) / &#8364;7.25(Large)<br/>
+						12.&nbsp;&nbsp;Chicken Chow Mein.......  &#8364;4.50(Small) / &#8364;7.25(Large)<br/>
+						13.&nbsp;&nbsp;Shrimp Chow Mein.......  &#8364;4.75(Small) / &#8364;7.95(Large)<br/>
+						14.&nbsp;&nbsp;Beef Chow Mein.......  &#8364;4.75(Small) / &#8364;7.95(Large)<br/>
+						</p>
+					</div>
+					<br/>
+					<h3><a name="04">FRIED RICE</a></h3>
+					<div>
+						<p>
+						15.&nbsp;&nbsp;Plain Fried Rice.......  &#8364;2.95(Small) / &#8364;4.95(Large)<br/>
+						16.&nbsp;&nbsp;Shrimp Fried Rice.......  &#8364;4.25(Small) / &#8364;7.50(Large)<br/>
+						17.&nbsp;&nbsp;Vegetable Fried Rice.......  &#8364;3.75(Small) / &#8364;6.25(Large)<br/>
+						</p>
+					</div>
+					<br/>
+		    	</div>
+		    	<div class="box_news">
+					<h3><a name="05">CHICKEN</a></h3>
+					<div>
+						<p>
+						18.&nbsp;&nbsp;Chicken with Broccoli.......  &#8364;4.95(Small) / &#8364;8.95(Large)<br/>
+						19.&nbsp;&nbsp;Chicken with Mushroom.......  &#8364;4.95(Small) / &#8364;8.95(Large)<br/>
+						20.&nbsp;&nbsp;Chicken with Black Bean Sauce.......  &#8364;4.95(Small) / &#8364;8.95(Large)<br/>
+						21.&nbsp;&nbsp;Chicken with Curry Sauce....... &#8364;4.95(Small) / &#8364;8.95(Large)<br/>
+						22.&nbsp;&nbsp;Chicken with Mixed Vegetable.......  &#8364;4.25(Small) / &#8364;7.50(Large)<br/>
+						</p>
+					</div>
+					<br/>
+					<h3><a name="06">BEEF</a></h3>
+					<div>
+						<p>
+						23.&nbsp;&nbsp;Beef with Broccoli....... &#8364;5.25(Small) / &#8364;9.50(Large)<br/>
+						24.&nbsp;&nbsp;Beef with Mushroom.......  &#8364;5.25(Small) / &#8364;9.50(Large)<br/>
+						25.&nbsp;&nbsp;Beef with Pepper and Tomato.......  &#8364;5.25(Small) / &#8364;9.50(Large)<br/>
+						26.&nbsp;&nbsp;Beef with Curry Sauce.......  &#8364;5.25(Small) / &#8364;9.50(Large)<br/>
+						27.&nbsp;&nbsp;Beef with Mixed Vegetable.......  &#8364;9.50(Large)<br/>
+						</p>
+					</div>
+					<br/>
+					<h3><a name="07">SEAFOOD</a></h3>
+					<div>
+						<p>
+						28.&nbsp;&nbsp;Shrimp with Oyster Sauce.......  &#8364;5.50(Small) / &#8364;10.75(Large)<br/>
+						29.&nbsp;&nbsp;Shrimp with String Beans.......  &#8364;10.75(Large)<br/>
+						</p>
+					</div>
+					<br/>
+			    </div>
+			</div>
+		</div>
+	</div>
+
+
+<!--/div>
+
+
+</div>
+-->
+	<div class="container">
+		<div class="row">
+			<div class="sevencol last">
+				<span>&copy; Flaming Wok Restaurant&nbsp;&nbsp;||&nbsp;&nbsp; Telephone: (01)&nbsp; 8178924&nbsp;||&nbsp; 24 Fairview Strand Rd - Dublin 3</span>
+			</div>
+			<div class="fivecol">
+				<div class="threecol">
+				<div class = "menu_item bot_menu"><a href="../index.html" class="link">HOME</a></div>
+			</div>
+			<div class="threecol">
+				<div class = "menu_item bot_menu"><a href="../menu_page/index.html" class="link">MENU</a></div>
+			</div>
+			<div class="threecol">
+				<div class = "menu_item bot_menu"><a href="../event_page/index.html" class="link">EVENTS</a></div>
+			</div>
+			<div class="threecol last">
+				<div class = "menu_item bot_menu"><a href="../offer_page/index.html" class="link">SPECIAL OFFERS</a></div>
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
